@@ -1,13 +1,15 @@
 p{
-  color: #C39BD3;
+  color: white;
   font-size: 30px;
 }
 
+body{background-color: #C39BD3;}
+
 .special {
   color: white;
-  background: #C39BD3;
+  background: #9B59B6;
   border: 1px soild red;
-  margin: 100px 20px 20px 20px;
+  margin: 250px 20px 20px 20px;
   padding: 50px;
 }
 
