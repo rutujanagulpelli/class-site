@@ -3,20 +3,20 @@ p{
   font-size: 25px;
 }
 
-body{background-color: #C39BD3;}
+body{background-color: #A9CCE3  ;}
 
 .special {
   color: white;
-  background: #9B59B6;
+  background: #17202A;
   border: 1px soild red;
   margin: 190px 20px 20px 20px;
   padding: 50px;
 }
 
 .handmade web {
-  color: white;
-  background: #C39BD3;
-  border: 4px soild #C39BD3;
+  color: #17202A;
+  background: #17202A;
+  border: 4px soild #17202A;
   margin: 50px 50px 20px 20px;
   padding: 50px;
 }
