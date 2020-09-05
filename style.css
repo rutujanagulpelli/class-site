@@ -1,9 +1,11 @@
 p{
   color: white;
   font-size: 25px;
+  font-family: 'Aldrich', sans-serif;
 }
 
-body{background-color: #A9CCE3  ;}
+body{background-color: #A9CCE3;}
+
 
 .special {
   color: white;
