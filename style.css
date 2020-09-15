@@ -4,13 +4,18 @@ p{
   font-family: 'Aldrich', sans-serif;
 }
 
+h4{
+  font-size: 25px;
+  font-family: 'Aldrich', sans-serif;
+}
+
 body{background-color: #A9CCE3;}
 
 
 .special {
   color: white;
   background: #17202A;
-  border: 4px solid #248DE5;
+  border: 5px solid #248DE5;
   margin: 100px 20px 20px 20px;
   padding: 50px;
 }
