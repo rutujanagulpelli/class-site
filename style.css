@@ -1,6 +1,6 @@
 p{
   color: white;
-  font-size: 25px;
+  font-size: 30px;
   font-family: 'Aldrich', sans-serif;
 }
 
@@ -10,15 +10,15 @@ body{background-color: #A9CCE3;}
 .special {
   color: white;
   background: #17202A;
-  border: 1px soild red;
-  margin: 190px 20px 20px 20px;
+  border: 4px solid #248DE5;
+  margin: 100px 20px 20px 20px;
   padding: 50px;
 }
 
-.handmade web {
+.special2 {
   color: #17202A;
-  background: #17202A;
-  border: 4px soild #17202A;
-  margin: 50px 50px 20px 20px;
+  background: white;
+  border: 4px dotted #248DE5;
+  margin: 30px 20px 20px 20px;
   padding: 50px;
 }
