@@ -44,6 +44,8 @@ body{
     display:flex;
     align-items:center;
     justify-content: center;
+    height: 30%;
+    width: 30%;
 }
 
 .bottom-item {
@@ -62,6 +64,10 @@ body{
 
 .center-item {
     background:#F8C471;
-    height:100px;
-    width:100px;
+    align-items:center;
+    display:flex;
+    justify-content: center;
+width:30%;
+height:30%;
+
 }

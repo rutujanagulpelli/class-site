@@ -1,29 +1,52 @@
+html {
+  background: url("Favicon.png") no-repeat center fixed;
+  background-size: 800px;
+
+  background-color: inherit;
+
+}
+
 p{
   color: white;
-  font-size: 30px;
-  font-family: 'Aldrich', sans-serif;
+  font-size: 20px;
+  font-family: 'Allerta Stencil', sans-serif;
 }
 
 h4{
   font-size: 25px;
-  font-family: 'Aldrich', sans-serif;
+  font-family: 'Allerta Stencil', sans-serif;
+  text-decoration: none;
 }
 
-body{background-color: #A9CCE3;}
+h2{
+  font-family: 'Allerta Stencil', sans-serif;
+  font-size: 100px;
+
+}
 
 
 .special {
-  color: white;
-  background: #17202A;
-  border: 5px solid #248DE5;
-  margin: 100px 20px 20px 20px;
-  padding: 50px;
+  color: #408A74;
+  font-size: 100px;
+  text-shadow: 8px 2px #030915;
+
 }
 
 .special2 {
-  color: #17202A;
-  background: white;
-  border: 4px dotted #248DE5;
-  margin: 30px 20px 20px 20px;
-  padding: 50px;
+  color: #369995;
+  font-size: 60px;
+text-shadow: 4px 4px #030915;
+}
+
+
+a{
+  font-size: 30px;
+  font-family: 'Allerta Stencil', sans-serif;
+  text-decoration: none;
+  display: inline-block;
+}
+
+background{
+  float: right;
+
 }
