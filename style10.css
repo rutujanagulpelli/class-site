@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: url("drag.png") no-repeat center fixed;
+}
+
+body {
+  background: #A3E4D7;
+  margin: 0;
+  height: 100%;
+  font-family: 'Fredericka the Great';
+  font-size: 23px;
+  font-color:#D98880;
+
+}
+p{
+color: #34495E;
+}
+
+
+.special-img {
+  transform:scale(0.25);
+  position: absolute;
+  /* display:none; */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.special {
+  color: rgb(215, 234, 255);
+  font-style: italic;
+}
+
+
+.special:hover {
+  color: rgb(152, 205, 255);
+}
+
+.special:hover .special-img {
+  /* display:block; */
+  opacity: 1;
+}
+.special-img:hover {
+  opacity: 1;}
+
+.one {
+  top:50px;
+  left:300px;
+  transform:scale(0.22);
+}
+
+.two {
+  bottom: 50px;
+  left: 70px;
+}
+
+.three {
+  bottom: 400px;
+  right: 70px;
+}
+
+.four {
+  bottom: 400px;
+  left: 60px;
+}
+
+.five {
+  top: 100px;
+  right: 400px;
+}
+
+.workshop{
+  transform: scale(2);
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.back{
+  transform: scale(2);
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left:20px;
+
+}

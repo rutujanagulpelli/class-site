@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Drag Me</title>
+  <link rel="stylesheet" href="style10.css">
+  <link rel="icon" type="png" href="drag.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+<style>
+.droptarget {
+  float: left;
+  width: 700px;
+  height: 400px;
+  margin: 50px;
+  padding: 10px;
+  border: 7px solid #85929E;
+}
+</style>
+
+</head>
+<body>
+<center>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget">Drag Me!</p>
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget">IDK</p>
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget">Hey There!</p>
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget">Whatsup</p>
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget">Drag Left</p>
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget">Drag Right</p>
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget">Hello</p>
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget"></p>
+</div>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)" id="dragtarget"></div>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)" id="dragtarget"></div>
+
+<p style="clear:both;" id="demo"></p>
+
+
+
+<script>
+function dragStart(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+  document.getElementById("demo").innerHTML = "Started to drag the p element";
+}
+
+function dragEnd(event) {
+  document.getElementById("demo").innerHTML = "Finished dragging the p element.";
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+}
+</script>
+</center>
+
+</body>
+</html>
