@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background:#F5CBA7;
+  margin:0;
+  display: flex;
+}
+
+h1{
+  color: white;
+  font-size: 900px;
+  font-family: 'Allerta Stencil', sans-serif;
+  
+}
+
+h2{
+  color: #F9E79F;
+  font-size: 500px;
+  font-family: 'Allerta Stencil', sans-serif;
+}
+
+h3{
+  color: white;
+  text-align: right;
+  font-size: 200px;
+  font-family: 'Allerta Stencil', sans-serif;
+}
+img {
+  width: 50vw;
+
+}
+
+p{ color: #F9E79F;
+font-size: 50px;
+font-family: 'Allerta Stencil', sans-serif;
+text-align: right;
+
+}
+:root {
+  --width: 100px;
+  --x-speed: 20s;
+  --y-speed: 7s;
+  --transition-speed: 2.2s;
+}
+
+.el {
+  width: var(--width);
+  height: var(--width);
+}
+
+.x {
+  animation: x var(--x-speed) linear infinite alternate;
+}
+.y {
+  animation: y var(--y-speed) linear infinite alternate;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX(calc(200vw - var(--width)));
+  }
+}
+@keyframes y {
+  100% {
+    transform: translateY(calc(200vh - var(--width)));
+  }
+}
