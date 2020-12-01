@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Happiness</title>
+  <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+background: #F0EFB2;
+  margin:0;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid black;
+	border-bottom: 50px solid transparent;
+  background: red;
+  position: relative;
+  animation: myfirst 5s 2;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 600px; top: 0px;}
+  50%  {background: blue; left: 400px; top: 400px;}
+  75%  {background: green; left: 0px; top: 200px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
+
+h1{
+  color: #858463;
+  font-size: 20px;
+  font-family: 'Allerta Stencil', sans-serif;
+
+}
+
+</style>
+</head>
+<body>
+
+<center><br><br><br>
+<h1>Happiness</h1>
+<br><br><br><br><br><br><br><br>
+
+<div class="triangle-right"></div>
+</center>
+
+</body>
+</html>

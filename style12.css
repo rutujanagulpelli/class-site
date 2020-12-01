@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+
+
+body {
+background-image:url("Map.png");
+  margin:0;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+
+}
+
+h1{
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Allerta Stencil', sans-serif;
+padding: 30px;
+text-shadow: 3px 3px black;
+}
+
+
+h2{
+  color: #F9E79F;
+  font-size: 30px;
+  font-family: 'Allerta Stencil', sans-serif;
+  text-shadow: 3px 3px black;
+}
+
+h3{
+  color: white;
+  text-align: right;
+  font-size: 30px;
+  font-family: 'Allerta Stencil', sans-serif;
+  text-shadow: 3px 3px black;
+}
+img {
+  width: 20vw;
+
+}
+
+p{ color: #F9E79F;
+font-size: 30px;
+font-family: 'Allerta Stencil', sans-serif;
+text-align: right;
+
+}
+:root {
+  --width: 100px;
+  --x-speed: 20s;
+  --y-speed: 7s;
+  --transition-speed: 2.2s;
+}
+
+.el {
+  width: var(--width);
+  height: var(--width);
+}
+
+.x {
+  animation: x var(--x-speed) linear infinite alternate;
+}
+.y {
+  animation: y var(--y-speed) linear infinite alternate;
+}
+
+@keyframes x {
+  100% {
+    transform: translateX(calc(200vw - var(--width)));
+  }
+}
+@keyframes y {
+  100% {
+    transform: translateY(calc(200vh - var(--width)));
+  }
+}
